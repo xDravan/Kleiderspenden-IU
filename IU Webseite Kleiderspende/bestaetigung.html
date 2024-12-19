@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bestätigung</title>
+
+  <link rel="stylesheet" href="styleDatein/style.css">
+  <script src="confirmation.js"></script>
+</head>
+<body>
+
+<div class = "confirmation"> 
+
+    <nav>
+        <ul class="nav justify-content-center">
+          <li><a href="index.html" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Startseite</a></li>
+          <li><a href="index.html#FormButtonAnker" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Spendenformulare</a></li>
+          <li><a href="index.html#AboutUs" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Über uns</a></li>
+        </ul>
+      </nav>
+
+  <h1>Ihre Spende - Zusammenfassung</h1>
+  <p>Vielen Dank für Ihre Spende! Ihre Angaben wurden erfasst.</p>
+
+  <p><b>Datum und Uhrzeit der Spende:</b> <span id="timestamp"></span></p>
+
+  <div id="donationDetails" class="donation-details"></div>
+
+</div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const dataString = decodeURIComponent(urlParams.get('data'));
+
+    const timestampElement = document.getElementById('timestamp');
+    const donationDetailsElement = document.getElementById('donationDetails');
+
+    displayTimestamp(timestampElement, new Date());
+    displayDonationDetails(dataString, donationDetailsElement);
+  </script>
+</body>
+</html>

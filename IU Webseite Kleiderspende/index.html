@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDatein/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <script src="script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!-- Start der Webseite - Header Bereich (Logo,Titel,Img)-->
+
+    <!--Logo, Titel und Links -  Start-->
+<header>
+
+    <section class = "start">
+
+        <div class="container-fluid">
+          
+        <div id="start">
+
+            <div class = "kopf">
+                <div class = "img-kopf"> <img src="bilder//logo.png" alt="Logo"> </div>
+                <h1>IU spendet Zukunft - Kleiderspendeaktion der Wirtschaftsinformatiker </h1>
+
+              <br>
+              <br>
+              <h1>Schön, dass du da bist!</h1>
+              <h2>
+                  Du möchtest etwas Gutes tun? Wunderbar! <br>
+                  Mit deiner kleinen Spende trägst du zu einem besseren Leben für Menschen bei.
+              </h2>
+              
+              <nav>
+                <ul class="nav justify-content-center">
+                  <li><a href="#start" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Startseite</a></li>
+                  <li><a href="#FormButtonAnker" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Spendenformulare</a></li>
+                  <li><a href="#AboutUs" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Über uns</a></li>
+                  <li><a href="#Krisengebiete" class="d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none border rounded-2">Krisengebiete</a></li>
+                </ul>
+              </nav>
+          
+          </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+  </header>
+
+  <body>
+    <!--Logo, Titel und Links - Ende-->
+
+    <!--Cards/Input zum Spenden - Start -->
+
+    <section class = "cards">
+
+      <div class="card-group">
+
+          <div class="card col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+              <img src="gif/Charity-Volunteers.gif" class="card-img-top" alt="1000 Gründe">
+
+              <div class="card text-bg-light mb-3">
+                <h5 class="card-title">1000 Gründe zu spenden!</h5>
+                <p class="card-text">Kleidung spenden ist nicht nur gut für den Planeten, sondern auch für dein Gewissen. <br>
+                  Durch das Weitergeben von gut erhaltener Kleidung reduzierst du deinen ökologischen Fußabdruck und trägst zur Kreislaufwirtschaft bei. <br>
+                  Außerdem schaffst du Platz in deinem Kleiderschrank und kannst neue Lieblingsstücke entdecken.</p>
+              </div>
+
+          </div>
+
+          <div class="card">
+
+              <img src="gif/Clothes-donation.gif" class="card-img-top" alt="Kleidung hilft">
+
+              <div class="card text-bg-light mb-3">
+                <h5 class="card-title">Kleidung hilft!</h5>
+                <p class="card-text">Mit einer Kleiderspende bringst du Freude in das Leben anderer Menschen. <br>
+                  Ob für Bedürftige, die sich neue Kleidung nicht leisten können, oder für Secondhand-Läden, die mit den Erlösen soziale Projekte unterstützen–deine Spende kann einen großen Unterschied machen.So hilfst du nicht nur Menschen in Not, sondern auch der Umwelt.</p>
+              </div>
+
+          </div>
+
+          <div class="card">
+
+              <img src="gif/Woman-doing-warm-clothes-donation-to-poor-people.gif" class="card-img-top" alt="Ausmisten">
+
+              <div class="card text-bg-light mb-3">
+                <h5 class="card-title">Ausmisten angesagt!</h5>
+                <p class="card-text">Um herauszufinden, welche Kleidung du spenden kannst, gehe deine Kleidungsstücke systematisch durch.<br>
+                   Frage dich bei jedem Teil: Habe ich es in den letzten 12 Monaten getragen? Passt es noch? Fühlt es sich gut an? Alles, was du bejaen kannst, darf bleiben. <br>
+                   Der Rest kann entweder gespendet oder verkauft werden.</p>
+              </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!--Cards/Input zum Spenden - Ende -->
+
+<!--Platzbereich um Webseitenübersicht zu bilden - Start-->
+
+<section>
+  <div class="space">
+    <h1>Danke für</h1>
+    <h2>245.653 Spenden</h2>
+    <h3>Somit konnten bereits viele Menschen unterstützt werden. <br>
+      Dies wäre niemals möglich gewesen, wenn es euch nicht gäbe!</h3>
+  </div>
+</section>
+<!--Platzbereich um Webseitenübersicht zu bilden - Ende-->
+
+
+<!-------------------------------------------------------------------------------------------------------------->
+
+<!-- Start Main - Formular (Abholung/Vorort)-->
+ 
+<!-- Das Formular wird "Geblockt/Versteckt" bis der Nutzer den Button drückt und die Funktion showForm aufruft-->
+ 
+<main>
+
+<section id ="formulare">
+
+  <div class = "FormHead">
+    <h2>Spenden Sie Kleidung!</h2>
+  </div>
+
+<div id = "FormButtonAnker">
+
+  <div class = "FormButton">
+
+    <button type="button" onclick="showForm('plz')">Kleiderspende per Sammelfahrzeug</button>
+    <button type="button" onclick="showForm('vorOForm')">Übergabe an der Geschäftsstelle</button>
+
+  </div>
+
+</div>
+    
+
+<div id ="plz" class="form" style="display: none;">
+
+    <form class="row g-3">
+        <h1>Bitte geben deine Postleitzahl an, damit eine Abholung geprüft werden kann</h1>
+        <br>
+        <h5>Gültige Abholbereiche sind im Raum (59-XXX) - andere Bereiche können leider nicht per Abholfahrzeug erreicht werden</h5>
+      
+        <div class="col-md-2">
+          <label for="inputPLZ" class="form-label">Bitte ihre Postleitzahl eingeben</label>
+          <input type="text" class="form-control" id="inputPLZ" placeholder="55555">
+        </div>
+
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" onclick="validatePLZ()">Prüfen</button>
+          <p id="result"></p>
+        </div>
+      
+      </form>
+
+</div>
+
+    <div id="abholForm" class="form" style="display: none;">
+
+        <h2>Formular für Abholung</h2>
+        <h2>Bitte haben Sie Verständnis, dass maximal 10 Spenden registriert werden können!</h2>
+
+        <form class="row g-3 needs-validation" novalidate>
+
+          <div class="col-md-4">
+
+            <label for="validationCustom01" class="form-label">Vorname</label>
+            <input type="text" class="form-control" id="inputVorname" placeholder="Max" required>
+
+            <div class="invalid-feedback">
+              Bitte gebe einen Vornamen an!
+            </div>
+
+            <div class="valid-feedback">
+              Sieht gut aus!
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+
+            <label for="validationCustom02" class="form-label">Nachname</label>
+            <input type="text" class="form-control" id="inputNachname" placeholder="Mustermann" required>
+
+            <div class="invalid-feedback">
+              Bitte gebe einen Nachnamen an!
+            </div>
+
+            <div class="valid-feedback">
+              Sieht gut aus!
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">Straße und Hausnummer</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="inputAddress" placeholder="IU Straße 1" required>
+
+              <div class="invalid-feedback">
+                Bitte gebe eine passende Adresse ein!
+              </div>
+              <div class="valid-feedback">
+                Sieht gut aus!
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Stadt</label>
+            <input type="text" class="form-control" id="inputStadt" placeholder="Unistadt" required>
+
+            <div class="invalid-feedback">
+             Bitte Stadt angeben!
+            </div>
+
+            <div class="valid-feedback">
+              Sieht gut aus!
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">Bundesland</label>
+
+            <select class="form-select" id="inputState" required>
+              <option selected disabled value="">Wähle...</option>
+              <option>
+              <option value="NRW">Nordrhein-Westfalen</option>
+              <option value="BW">Baden-Württemberg</option>
+              <option value="BY">Bayern</option>
+              <option value="BE">Berlin</option>
+              <option value="BB">Brandenburg</option>
+              <option value="HB">Bremen</option>
+              <option value="HH">Hamburg</option>
+              <option value="HE">Hessen</option>
+              <option value="MV">Mecklenburg-Vorpommern</option>
+              <option value="NI">Niedersachsen</option>
+              <option value="RP">Rheinland-Pfalz</option>
+              <option value="SL">Saarland</option>
+              <option value="SN">Sachsen</option>
+              <option value="ST">Sachsen-Anhalt</option>
+              <option value="SH">Schleswig-Holstein</option>
+              <option value="TH">Thüringen</option>
+
+            </option>
+
+            </select>
+
+            <div class="invalid-feedback">
+              Bitte wähle ein Bundesland
+            </div>
+
+            <div class="valid-feedback">
+              Sieht gut aus!
+            </div>
+            
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit" onclick="submitForm()">Absenden</button>
+          </div>
+          
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Art der Kleidung</th>
+              <th>Anzahl</th>
+              <th>Zielort</th>
+            </tr>
+          </thead>
+          <tbody id="abholTableBody">
+            <tr>
+              <td>
+                <select name="kleidungArt[]">
+                  <option value="em">Bitte wählen</option>
+                  <option value="tshirt">T-Shirt</option>
+                  <option value="socken">Socken</option>
+                  <option value="unterwäsche">Unterwäsche</option>
+                  <option value="hosen">Hosen</option>
+                  <option value="pullis">Pullis</option>
+                  </select>
+              </td>
+              <td><input type="number" name="kleidungAnzahl[]"></td>
+              <td>
+                <select name="ziel[]">
+                    <option value="emt">Bitte wählen</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="afrika">Afrika</option>
+                    <option value="syrien">Syrien</option>
+                    <option value="jemen">Jemen</option>
+                  </select>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        <button onclick="addRow('abholTableBody')">Zeile hinzufügen</button>
+        <br>
+        <br>
+
+    </div>
+
+    
+
+    <!--Ende Formular Abholen Sammelfahrzeug-->
+
+    <!--Start Formular Vorort Spende-->
+
+    <div id="vorOForm" style="display: none;">
+
+      <h2>Spendenformular Vor Ort</h2>
+      <h2>Bitte haben Sie Verständnis, dass maximal 10 Spenden registriert werden können!</h2>
+ 
+      <table>
+        <thead>
+          <tr>
+            <th>Art der Kleidung</th>
+            <th>Anzahl</th>
+            <th>Zielort</th>
+          </tr>
+        </thead>
+        <tbody id="vorOFormBody">
+          <tr>
+            <td>
+              <select name="kleidungArt[]">
+                <option value="em">Bitte wählen</option>
+                <option value="tshirt">T-Shirt</option>
+                <option value="socken">Socken</option>
+                <option value="unterwäsche">Unterwäsche</option>
+                <option value="hosen">Hosen</option>
+                <option value="pullis">Pullis</option>
+                </select>
+            </td>
+            <td><input type="number" name="kleidungAnzahl[]"></td>
+            <td>
+              <select name="ziel[]">
+                  <option value="emt">Bitte wählen</option>
+                  <option value="ukraine">Ukraine</option>
+                  <option value="afrika">Afrika</option>
+                  <option value="syrien">Syrien</option>
+                  <option value="jemen">Jemen</option>
+                </select>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addRow('vorOFormBody')">Zeile hinzufügen</button>
+      <br>
+      <br>
+      <button type="submit" onclick="submitForm1()">Absenden</button>
+
+      <div id="message1" style="display: none;"><h5>Ihr Auftrag wurde empfangen und wird nun bearbeitet. <br>
+        Vielen Dank! <br>
+        Ein Mitarbeiter wird ihre Spende entgegennehmen <br>
+        Sie werden zur Spendenbestätigung weitergeleitet. <br>
+        Auf Wiedersehen!
+      </h5>
+      </div>
+      <!--Ende Formular Vorort Spende-->
+    </div>
+    
+  </section>
+
+  <section id ="AboutUs">
+
+    <div class = "textAboutUs">
+      <h1>Kurzes Wort über uns</h1>
+      <p>Hinter jedem Kleidungsstück, das Sie uns anvertrauen, steckt ein Herz. <br>
+        Unsere Fahrer und Mitarbeiter in den Spendenannahme-Stellen arbeiten mit Leidenschaft und Engagement daran, Ihre Spenden zu sortieren und weiterzugeben.<br>
+         Dank ihres ehrenamtlichen Einsatzes können wir Menschen in Not unterstützen und Ressourcen schonen.<br>
+         Herzlichen Dank für Ihre Unterstützung!</p>
+    </div>
+
+  </section>
+
+  <section id ="Krisengebiete">
+
+    <div class = "textAboutUs">
+      <h1>Infos & Übersicht der Krisengebiete</h1>
+      <br>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="bilder/ukraine.jpg" class="d-block w-100" alt="ukraine-bild">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ukraine</h5>
+            <p>Seit dem russischen Angriff im Februar 2022 befindet sich die Ukraine in einem umfassenden Krieg. Dieser hat zu einer massiven humanitären Krise geführt, Millionen Menschen vertrieben und die Infrastruktur des Landes schwer beschädigt. </p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="bilder/syrien.jpg" class="d-block w-100" alt="syrien-bild">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Syrien</h5>
+            <p>Der syrische Bürgerkrieg, der 2011 aus Protesten gegen das Assad-Regime entbrannte, hat das Land in ein Chaos gestürzt. Millionen Menschen sind auf der Flucht, Städte sind zerstört und die Bevölkerung leidet unter Hunger und Krankheiten.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="bilder/africa.jpg" class="d-block w-100" alt="africa-bild">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Afrika</h5>
+            <p>Afrika ist ein Kontinent mit zahlreichen Krisenherden. Konflikte, Armut, Klimawandel, politische Instabilität und Krankheiten wie Ebola oder COVID-19 stellen viele Länder vor immense Herausforderungen.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="bilder/yemen.jpg" class="d-block w-100" alt="yemen-bild">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Jemen</h5>
+            <p>Der Jemen ist seit Jahren von einem verheerenden Bürgerkrieg geprägt. Eine Koalition arabischer Staaten, angeführt von Saudi-Arabien, kämpft gegen die Huthi-Rebellen. Die humanitäre Lage ist katastrophal: Millionen Menschen stehen am Rand des Hungertods, die Infrastruktur ist zerstört und die Bevölkerung leidet unter Cholera und anderen Krankheiten.</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+</main>
+
+<!-- Ende Main - Formular (Abholung/Vorort)-->
+
+<!-- Start Footer - Datenschutz und Impressum-->
+    <footer>
+      
+        <nav>
+            <ul class="nav justify-content-center">
+                <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+        <p>Hinweis zur Nutzung von Abbildungen:<br>
+          Auf dieser Webseite werden Abbildungen verwendet, die unter den folgenden Bedingungen genutzt werden: <br>
+          - Selbst erstelltes Logo <br>
+          - Copyright-freie Bilder und GIFs von Pexels und IconScout</p>
+        &copy; 2024 Alexander Hoffmann 
+    </footer>
+
+<!-- Ende Footer - Datenschutz und Impressum-->
+
+</body>
+
+</html>

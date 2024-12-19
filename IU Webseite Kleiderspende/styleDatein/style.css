@@ -1,0 +1,331 @@
+  /* ------------ Start (Logo) - Header Bereich ------------*/
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #ff7214;
+    background-attachment: fixed; /* Der Hintergrund bleibt beim Scrollen fixiert */
+  }
+  
+  /* Logo der Webseite einfügen und animieren - Start*/
+.start {
+  color: #ffffff;
+  background-color: #ff7214;
+}
+
+.img-kopf {
+    text-align: center;
+    
+    animation: rotate 2s infinite linear;
+
+    animation: shake 2s infinite linear;
+}
+
+.img-kopf img {
+  width:  300px; 
+  height: auto; 
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+   /* Logo der Webseite einfügen und animieren - Ende */
+
+.kopf {
+    padding: 20px;
+    width: auto;
+    margin: 20px auto;
+  }
+
+  .kopf h1, h2 {
+    color:#000000;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 15px;
+    padding-top: 20px;
+  
+  }
+
+
+  /*Nav Leiste Anpassungen - Start*/
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  
+  nav li {
+    margin: 0 10px;
+    background-color:#ff6105;
+  }
+
+  nav a {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; 
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    box-shadow: 0px 5px 10px rgba(23, 188, 238, 0.2);
+    border: none; 
+    background-color: #7610fc;
+  }
+
+  /*Nav Leiste Anpassungen - Ende*/
+
+  /*Card Bereich - Start*/
+
+  .card-title{
+    background-color: #ffffff;
+    text-align: center;
+   font-style: oblique;
+   font-weight: bolder;
+   text-decoration: underline;
+  }
+  
+  .card-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  /*Card Bereich - Ende*/
+
+  /* Space Bereich - Start */
+    .space {
+      background-color: #ff7214;
+      width: auto;
+      height: 250px;
+    }
+
+    .space h1{
+      color: #000000;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: underline;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .space h2, .space h3 {
+      color: #fcfcfc;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: underline;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+   /* Space Bereich - Ende */
+
+
+
+  /* ------------ Ende Header Bereich ------------*/
+  
+   /* ------------ Start Main Bereich - Formular ------------*/
+    #formulare {
+      margin-bottom: 40px;
+    }
+   .FormHead h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   }
+
+   .FormButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px; /* Adjust the radius as needed */
+}
+
+.FormButton button {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+   /* Button Bearbeitung - Start*/
+   .FormButton button {
+    background-color: #ff6105;
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    border-radius: 10px;
+  }
+
+
+
+  button:hover {
+    background-color: #7610fc;
+  }
+
+  /* Button Bearbeitung - Ende*/
+  .form {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #abholForm {
+    display: block; /* Sicherstellen, dass das Formular sichtbar ist */
+    width: 80%; /* Breite des Formulars anpassen */
+    margin: 0 auto; /* Zentrieren des Formulars */
+  }
+
+  #VorOForm {
+    display: block; /* Sicherstellen, dass das Formular sichtbar ist */
+    width: 80%; /* Breite des Formulars anpassen */
+    margin: 0 auto; /* Zentrieren des Formulars */
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #message h5 {
+    color: #048308 !important;
+  }
+
+  #message1 h5 {
+    color: #048308 !important;
+  }
+
+  #result {
+    color: red;
+  }
+
+
+  /* About Us - Start */
+  #AboutUs {
+    background-color: #ff6105;
+    margin-bottom: 20px;
+  }
+
+  .textAboutUs h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    text-decoration:underline;
+    color: #030303;
+    text-align: center;
+  }
+
+  .textAboutUs p {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 20px;
+    color: #fcfcfc;
+    text-align: center;
+  }
+
+  /* About Us - Ende */
+
+  /* Krisengebiete - Start */ 
+
+  .carousel-item p, .carousel-item h5 {
+    color: #030303;
+    font-size: 1.2em;  /* Relative Einheit für bessere Skalierbarkeit */
+    font-weight: bold; /* Kürzere Schreibweise für font-weight: 700; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Leichter Text-Schatten */
+    background-color: rgba(255, 255, 255, 0.8); /* Leichter weißer Hintergrund */
+  }
+
+  .carousel-item {
+    max-width: auto;
+    max-height: 1000px;
+  }
+
+  /* Footer - Start */ 
+
+  
+    footer nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content:center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  
+    }
+    
+    footer nav li {
+      margin: 0 10px;
+      background-color:#ff6105;
+      border-radius: 10px;
+    }
+  
+   footer nav a {
+      color: rgb(0, 0, 0);
+      padding: 10px 20px; 
+      font-size: 40px;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+    
+    footer nav a:hover {
+      box-shadow: 0px 5px 10px rgba(23, 188, 238, 0.2);
+      border: none; 
+      background-color: #7610fc;
+    }
+
+  /* Bestätigungsseite */
+.donation-details {
+  margin-top: 20px;
+}
+
+.donation-row {
+  margin-bottom: 10px;
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.confirmation h1 {
+
+  color: #fcfcfc;
+  text-decoration: underline;
+  font-size: 60px;
+}
+
+.confirmation p {
+
+  color: #000000;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+
+
+  

@@ -174,6 +174,43 @@
         <h2>Formular für Abholung</h2>
         <h2>Bitte haben Sie Verständnis, dass maximal 10 Spenden registriert werden können!</h2>
 
+        <table>
+          <thead>
+            <tr>
+              <th>Art der Kleidung</th>
+              <th>Anzahl</th>
+              <th>Zielort</th>
+            </tr>
+          </thead>
+          <tbody id="abholTableBody">
+            <tr>
+              <td>
+                <select name="kleidungArt[]">
+                  <option value="em">Bitte wählen</option>
+                  <option value="tshirt">T-Shirt</option>
+                  <option value="socken">Socken</option>
+                  <option value="unterwäsche">Unterwäsche</option>
+                  <option value="hosen">Hosen</option>
+                  <option value="pullis">Pullis</option>
+                  </select>
+              </td>
+              <td><input type="number" name="kleidungAnzahl[]"></td>
+              <td>
+                <select name="ziel[]">
+                    <option value="emt">Bitte wählen</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="afrika">Afrika</option>
+                    <option value="syrien">Syrien</option>
+                    <option value="jemen">Jemen</option>
+                  </select>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        <button onclick="addRow('abholTableBody')">Zeile hinzufügen</button>
+        <br>
+        <br>
+
         <form class="row g-3 needs-validation" novalidate>
 
           <div class="col-md-4">
@@ -277,43 +314,6 @@
           </div>
           
         </form>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Art der Kleidung</th>
-              <th>Anzahl</th>
-              <th>Zielort</th>
-            </tr>
-          </thead>
-          <tbody id="abholTableBody">
-            <tr>
-              <td>
-                <select name="kleidungArt[]">
-                  <option value="em">Bitte wählen</option>
-                  <option value="tshirt">T-Shirt</option>
-                  <option value="socken">Socken</option>
-                  <option value="unterwäsche">Unterwäsche</option>
-                  <option value="hosen">Hosen</option>
-                  <option value="pullis">Pullis</option>
-                  </select>
-              </td>
-              <td><input type="number" name="kleidungAnzahl[]"></td>
-              <td>
-                <select name="ziel[]">
-                    <option value="emt">Bitte wählen</option>
-                    <option value="ukraine">Ukraine</option>
-                    <option value="afrika">Afrika</option>
-                    <option value="syrien">Syrien</option>
-                    <option value="jemen">Jemen</option>
-                  </select>
-                </td>
-            </tr>
-          </tbody>
-        </table>
-        <button onclick="addRow('abholTableBody')">Zeile hinzufügen</button>
-        <br>
-        <br>
 
     </div>
 
